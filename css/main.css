@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
+*{
+    font-family: 'Cairo', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --blue--:#2C6CCF;
+    --red--:#CF2C2C;
+    --green--:#309E0E;
+    --orange--:#CD661A;
+    --lin-bg--:#CFCFCF;
+}
+h1{
+    margin: 30px;
+    font-size: 25px;
+}
+h3{
+    margin: 30px;
+    width: 200px;
+    position: relative;
+}
+h3::before{
+    content: "";
+    border: 6px solid rgb(62, 62, 224);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -15px;
+    z-index: 3;
+}
+h3::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--lin-bg--);
+    position: absolute;
+    bottom: -10px;
+    left: 1px;
+    z-index: 1;
+}
+span {
+    width: 50%;
+    height: 2px;
+    background-color: #2C6CCF;
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    z-index: 2;
+}
+.box::before{
+    border-radius: 0%;
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    -ms-border-radius: 0%;
+    -o-border-radius: 0%;
+}
+.triangle-up::before {
+    border-radius: 0%;
+    border-color: transparent  transparent var(--blue--) transparent;
+    border-width: 10px;
+    bottom: -8px;
+    z-index: 3;
+}
+.triangle-down::before {
+    border-radius: 0%;
+    border-color: var(--blue--)  transparent transparent transparent;
+    border-width: 10px;
+    bottom: -30px;
+    z-index: 3;
+}
+
+.blue::before, .blue-s{
+    background-color: var(--blue--);
+    border-color: var(--blue--);
+}
+.red::before, .red-s{
+    background-color: var(--red--);
+    border-color: var(--red--);
+}
+.green::before, .green-s{
+    background-color: var(--green--);
+    border-color: var(--green--);
+}
+.orange::before, .orange-s{
+    background-color: var(--orange--);
+    border-color: var(--orange--);
+}
+.blue-up::before{
+    border-color: transparent  transparent var(--blue--) transparent;
+}
+.red-up::before{
+    border-color: transparent  transparent var(--red--) transparent;
+}
+.green-up::before{
+    border-color: transparent  transparent var(--green--) transparent;
+}
+.orange-up::before{
+    border-color: transparent  transparent var(--orange--) transparent;
+}
+.blue-down::before{
+    border-color: var(--blue--) transparent  transparent transparent;
+}
+.red-down::before{
+    border-color: var(--red--) transparent  transparent transparent;
+}
+.green-down::before{
+    border-color: var(--green--) transparent  transparent transparent;
+}
+.orange-down::before{
+    border-color:var(--orange--) transparent transparent transparent;
+}
+.head-color-blue{
+    color: var(--blue--);
+}
+.head-color-red{
+    color: var(--red--);
+}
+.head-color-green{
+    color: var(--green--);
+}
+.head-color-orange{
+    color: var(--orange--);
+}
